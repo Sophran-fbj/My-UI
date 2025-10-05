@@ -1,0 +1,18 @@
+.my-icon {
+  --my-icon-color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  fill: currentColor;
+  color: var(--my-icon-color);
+  font-size: inherit;
+}
+
+@each $val in primary, info, success, warning, danger {
+  // 当你挂上 .my-icon--primary 类之后
+  // 你的 --my-icon-color 这个变量的值就会变成 var(--my-color-primary)
+  .my-icon--#{$val} {
+    --my-icon-color: var(--my-color-#{$val});
+  }
+}
