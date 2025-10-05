@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">Duyiui 组件展示2</h1>
+  <h1 class="title">My-UI 组件展示</h1>
   <nav class="nav">
     <router-link to="/">Icon</router-link>
     <router-link to="/button">Button</router-link>
